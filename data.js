@@ -1,0 +1,650 @@
+window.LEVEL_FOUR_WORDS = [
+  {
+    "id": 1,
+    "unit": 1,
+    "number": 1,
+    "word": "visit",
+    "meaning": "拜訪",
+    "past": "visited"
+  },
+  {
+    "id": 2,
+    "unit": 1,
+    "number": 2,
+    "word": "hug",
+    "meaning": "擁抱",
+    "past": "hugged"
+  },
+  {
+    "id": 3,
+    "unit": 1,
+    "number": 3,
+    "word": "teach",
+    "meaning": "教",
+    "past": "taught"
+  },
+  {
+    "id": 4,
+    "unit": 1,
+    "number": 4,
+    "word": "protect",
+    "meaning": "保護",
+    "past": "protected"
+  },
+  {
+    "id": 5,
+    "unit": 1,
+    "number": 5,
+    "word": "forget",
+    "meaning": "忘記",
+    "past": "forgot"
+  },
+  {
+    "id": 6,
+    "unit": 1,
+    "number": 6,
+    "word": "carry",
+    "meaning": "攜帶、抱、背",
+    "past": "carried"
+  },
+  {
+    "id": 7,
+    "unit": 1,
+    "number": 7,
+    "word": "rhino",
+    "meaning": "犀牛",
+    "past": ""
+  },
+  {
+    "id": 8,
+    "unit": 1,
+    "number": 8,
+    "word": "routine",
+    "meaning": "日常工作",
+    "past": ""
+  },
+  {
+    "id": 9,
+    "unit": 1,
+    "number": 9,
+    "word": "goldfish",
+    "meaning": "金魚",
+    "past": ""
+  },
+  {
+    "id": 10,
+    "unit": 1,
+    "number": 10,
+    "word": "breakfast",
+    "meaning": "早餐",
+    "past": ""
+  },
+  {
+    "id": 11,
+    "unit": 1,
+    "number": 11,
+    "word": "bedtime",
+    "meaning": "就寢時間",
+    "past": ""
+  },
+  {
+    "id": 12,
+    "unit": 1,
+    "number": 12,
+    "word": "hamster",
+    "meaning": "倉鼠",
+    "past": ""
+  },
+  {
+    "id": 13,
+    "unit": 1,
+    "number": 13,
+    "word": "zookeeper",
+    "meaning": "動物管理員",
+    "past": ""
+  },
+  {
+    "id": 14,
+    "unit": 1,
+    "number": 14,
+    "word": "vegetable(s)",
+    "meaning": "蔬菜",
+    "past": ""
+  },
+  {
+    "id": 15,
+    "unit": 1,
+    "number": 15,
+    "word": "visitor",
+    "meaning": "訪客",
+    "past": ""
+  },
+  {
+    "id": 16,
+    "unit": 1,
+    "number": 16,
+    "word": "different",
+    "meaning": "不同的",
+    "past": ""
+  },
+  {
+    "id": 17,
+    "unit": 1,
+    "number": 17,
+    "word": "daily",
+    "meaning": "每日的",
+    "past": ""
+  },
+  {
+    "id": 18,
+    "unit": 1,
+    "number": 18,
+    "word": "special",
+    "meaning": "特別的",
+    "past": ""
+  },
+  {
+    "id": 19,
+    "unit": 1,
+    "number": 19,
+    "word": "never",
+    "meaning": "從未（不）",
+    "past": ""
+  },
+  {
+    "id": 20,
+    "unit": 1,
+    "number": 20,
+    "word": "sometimes",
+    "meaning": "有時",
+    "past": ""
+  },
+  {
+    "id": 21,
+    "unit": 1,
+    "number": 21,
+    "word": "usually",
+    "meaning": "通常",
+    "past": ""
+  },
+  {
+    "id": 22,
+    "unit": 1,
+    "number": 22,
+    "word": "always",
+    "meaning": "總是",
+    "past": ""
+  },
+  {
+    "id": 23,
+    "unit": 1,
+    "number": 23,
+    "word": "hold hands",
+    "meaning": "握手",
+    "past": ""
+  },
+  {
+    "id": 24,
+    "unit": 1,
+    "number": 24,
+    "word": "feed my pet",
+    "meaning": "餵寵物",
+    "past": ""
+  },
+  {
+    "id": 25,
+    "unit": 1,
+    "number": 25,
+    "word": "pick up",
+    "meaning": "拿起；接人",
+    "past": ""
+  },
+  {
+    "id": 26,
+    "unit": 1,
+    "number": 26,
+    "word": "play with",
+    "meaning": "跟…一起玩",
+    "past": ""
+  },
+  {
+    "id": 27,
+    "unit": 1,
+    "number": 27,
+    "word": "care for",
+    "meaning": "照顧",
+    "past": ""
+  },
+  {
+    "id": 28,
+    "unit": 1,
+    "number": 28,
+    "word": "take care of my pet",
+    "meaning": "照顧寵物",
+    "past": ""
+  },
+  {
+    "id": 29,
+    "unit": 1,
+    "number": 29,
+    "word": "make my bed",
+    "meaning": "整理床",
+    "past": ""
+  },
+  {
+    "id": 30,
+    "unit": 1,
+    "number": 30,
+    "word": "take a shower",
+    "meaning": "淋浴",
+    "past": ""
+  },
+  {
+    "id": 31,
+    "unit": 1,
+    "number": 31,
+    "word": "give my pet a bath",
+    "meaning": "給寵物洗澡",
+    "past": ""
+  },
+  {
+    "id": 32,
+    "unit": 1,
+    "number": 32,
+    "word": "come home",
+    "meaning": "回家",
+    "past": ""
+  },
+  {
+    "id": 33,
+    "unit": 1,
+    "number": 33,
+    "word": "have a snack",
+    "meaning": "吃點心",
+    "past": ""
+  },
+  {
+    "id": 34,
+    "unit": 1,
+    "number": 34,
+    "word": "do my homework",
+    "meaning": "做功課",
+    "past": ""
+  },
+  {
+    "id": 35,
+    "unit": 1,
+    "number": 35,
+    "word": "get dressed",
+    "meaning": "穿衣服",
+    "past": ""
+  },
+  {
+    "id": 36,
+    "unit": 1,
+    "number": 36,
+    "word": "brush my teeth",
+    "meaning": "刷牙",
+    "past": ""
+  },
+  {
+    "id": 37,
+    "unit": 2,
+    "number": 1,
+    "word": "direction",
+    "meaning": "方向",
+    "past": ""
+  },
+  {
+    "id": 38,
+    "unit": 2,
+    "number": 2,
+    "word": "town",
+    "meaning": "城鎮",
+    "past": ""
+  },
+  {
+    "id": 39,
+    "unit": 2,
+    "number": 3,
+    "word": "village",
+    "meaning": "村莊",
+    "past": ""
+  },
+  {
+    "id": 40,
+    "unit": 2,
+    "number": 4,
+    "word": "post office",
+    "meaning": "郵局",
+    "past": ""
+  },
+  {
+    "id": 41,
+    "unit": 2,
+    "number": 5,
+    "word": "museum",
+    "meaning": "博物館",
+    "past": ""
+  },
+  {
+    "id": 42,
+    "unit": 2,
+    "number": 6,
+    "word": "hospital",
+    "meaning": "醫院",
+    "past": ""
+  },
+  {
+    "id": 43,
+    "unit": 2,
+    "number": 7,
+    "word": "bakery",
+    "meaning": "麵包店",
+    "past": ""
+  },
+  {
+    "id": 44,
+    "unit": 2,
+    "number": 8,
+    "word": "restaurant",
+    "meaning": "餐廳",
+    "past": ""
+  },
+  {
+    "id": 45,
+    "unit": 2,
+    "number": 9,
+    "word": "supermarket",
+    "meaning": "超級市場",
+    "past": ""
+  },
+  {
+    "id": 46,
+    "unit": 2,
+    "number": 10,
+    "word": "train station",
+    "meaning": "火車站",
+    "past": ""
+  },
+  {
+    "id": 47,
+    "unit": 2,
+    "number": 11,
+    "word": "toy store",
+    "meaning": "玩具店",
+    "past": ""
+  },
+  {
+    "id": 48,
+    "unit": 2,
+    "number": 12,
+    "word": "drugstore",
+    "meaning": "藥局",
+    "past": ""
+  },
+  {
+    "id": 49,
+    "unit": 2,
+    "number": 13,
+    "word": "movie theater",
+    "meaning": "電影院",
+    "past": ""
+  },
+  {
+    "id": 50,
+    "unit": 2,
+    "number": 14,
+    "word": "library",
+    "meaning": "圖書館",
+    "past": ""
+  },
+  {
+    "id": 51,
+    "unit": 2,
+    "number": 15,
+    "word": "police station",
+    "meaning": "警察局",
+    "past": ""
+  },
+  {
+    "id": 52,
+    "unit": 2,
+    "number": 16,
+    "word": "swimming pool",
+    "meaning": "游泳池",
+    "past": ""
+  },
+  {
+    "id": 53,
+    "unit": 2,
+    "number": 17,
+    "word": "mall",
+    "meaning": "購物中心",
+    "past": ""
+  },
+  {
+    "id": 54,
+    "unit": 2,
+    "number": 18,
+    "word": "zoo",
+    "meaning": "動物園",
+    "past": ""
+  },
+  {
+    "id": 55,
+    "unit": 2,
+    "number": 19,
+    "word": "stadium",
+    "meaning": "運動場、體育場",
+    "past": ""
+  },
+  {
+    "id": 56,
+    "unit": 2,
+    "number": 20,
+    "word": "avenue",
+    "meaning": "大街、大道",
+    "past": ""
+  },
+  {
+    "id": 57,
+    "unit": 2,
+    "number": 21,
+    "word": "street",
+    "meaning": "街道",
+    "past": ""
+  },
+  {
+    "id": 58,
+    "unit": 2,
+    "number": 22,
+    "word": "bathing suit",
+    "meaning": "游泳衣",
+    "past": ""
+  },
+  {
+    "id": 59,
+    "unit": 2,
+    "number": 23,
+    "word": "medicine",
+    "meaning": "藥",
+    "past": ""
+  },
+  {
+    "id": 60,
+    "unit": 2,
+    "number": 24,
+    "word": "image",
+    "meaning": "形象；圖像",
+    "past": ""
+  },
+  {
+    "id": 61,
+    "unit": 2,
+    "number": 25,
+    "word": "satellite",
+    "meaning": "衛星",
+    "past": ""
+  },
+  {
+    "id": 62,
+    "unit": 2,
+    "number": 26,
+    "word": "planet",
+    "meaning": "行星",
+    "past": ""
+  },
+  {
+    "id": 63,
+    "unit": 2,
+    "number": 27,
+    "word": "continent",
+    "meaning": "大陸、大洲",
+    "past": ""
+  },
+  {
+    "id": 64,
+    "unit": 2,
+    "number": 28,
+    "word": "culture",
+    "meaning": "文化",
+    "past": ""
+  },
+  {
+    "id": 65,
+    "unit": 2,
+    "number": 29,
+    "word": "Internet",
+    "meaning": "網際網路",
+    "past": ""
+  },
+  {
+    "id": 66,
+    "unit": 2,
+    "number": 30,
+    "word": "gymnasium",
+    "meaning": "體育館",
+    "past": ""
+  },
+  {
+    "id": 67,
+    "unit": 2,
+    "number": 31,
+    "word": "interesting",
+    "meaning": "有趣的",
+    "past": ""
+  },
+  {
+    "id": 68,
+    "unit": 2,
+    "number": 32,
+    "word": "favorite",
+    "meaning": "特別喜愛的",
+    "past": ""
+  },
+  {
+    "id": 69,
+    "unit": 2,
+    "number": 33,
+    "word": "lost",
+    "meaning": "迷路的",
+    "past": ""
+  },
+  {
+    "id": 70,
+    "unit": 2,
+    "number": 34,
+    "word": "famous",
+    "meaning": "有名的",
+    "past": ""
+  },
+  {
+    "id": 71,
+    "unit": 2,
+    "number": 35,
+    "word": "delicious",
+    "meaning": "美味的",
+    "past": ""
+  },
+  {
+    "id": 72,
+    "unit": 2,
+    "number": 36,
+    "word": "straight",
+    "meaning": "筆直的",
+    "past": ""
+  },
+  {
+    "id": 73,
+    "unit": 2,
+    "number": 37,
+    "word": "connect",
+    "meaning": "連接；連結",
+    "past": ""
+  },
+  {
+    "id": 74,
+    "unit": 2,
+    "number": 38,
+    "word": "explore",
+    "meaning": "探索",
+    "past": ""
+  },
+  {
+    "id": 75,
+    "unit": 2,
+    "number": 39,
+    "word": "across from",
+    "meaning": "在…對面",
+    "past": ""
+  },
+  {
+    "id": 76,
+    "unit": 2,
+    "number": 40,
+    "word": "next to",
+    "meaning": "在…旁邊",
+    "past": ""
+  },
+  {
+    "id": 77,
+    "unit": 2,
+    "number": 41,
+    "word": "between",
+    "meaning": "在…之間",
+    "past": ""
+  },
+  {
+    "id": 78,
+    "unit": 2,
+    "number": 42,
+    "word": "famous for",
+    "meaning": "以…聞名",
+    "past": ""
+  },
+  {
+    "id": 79,
+    "unit": 2,
+    "number": 43,
+    "word": "behind",
+    "meaning": "在…後面",
+    "past": ""
+  },
+  {
+    "id": 80,
+    "unit": 2,
+    "number": 44,
+    "word": "on the corner of",
+    "meaning": "在…角落",
+    "past": ""
+  },
+  {
+    "id": 81,
+    "unit": 2,
+    "number": 45,
+    "word": "fill in",
+    "meaning": "填寫",
+    "past": ""
+  }
+];

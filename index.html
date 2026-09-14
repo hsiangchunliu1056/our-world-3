@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Our World 3 英文單字發音練習">
+  <title>Our World 3 英文單字｜點擊發音</title>
+  <link rel="stylesheet" href="styles.css?v=20260914-all-stress">
+</head>
+<body>
+  <main class="page-shell">
+    <header class="hero">
+      <p class="eyebrow">ENGLISH PRACTICE</p>
+      <h1>Our World 3 英文單字</h1>
+      <p class="intro">點擊單字聽美式英語發音。可用英文或中文搜尋。單字與例句只在母音字母下方標示淺灰色母音音標；不發音字母不標示。紅色粗體加底線＝各字的主要重音音節；單音節字整字標示。單字、片語與例句皆適用，不代表整句的強調位置。</p>
+      <p>Unit 1 · A Helping Hand（1–36）<br>Unit 2 · My Place in the World（37–81）</p><p><a href="unit-1.txt" download>下載 Unit 1 文字檔</a> · <a href="unit-2.txt" download>下載 Unit 2 文字檔</a> · <a href="outputs/01a09ff2-8b40-76b3-acca-fc5dd472c3a1/Our-World-3-Unit-1-2.xlsx" download>下載 Unit 1＋2 Excel</a></p><div class="toolbar"><label for="unit">單元</label><select id="unit"><option value="">全部單元</option><option value="1">Unit 1</option><option value="2">Unit 2</option></select>
+        <label class="search-field" for="search"><span class="sr-only">搜尋單字</span><input id="search" type="search" placeholder="搜尋英文或中文" autocomplete="off"></label>
+        <button id="stop-speaking" type="button" disabled>停止發音</button>
+      </div>
+      <p id="voice-status" class="voice-status" aria-live="polite">準備好了</p>
+    </header>
+    <section class="quiz-panel" aria-labelledby="quiz-title">
+      <div><p class="quiz-kicker">QUIZ</p><h2 id="quiz-title">範圍測驗</h2><p class="quiz-help">輸入編號範圍，例如 1-5；會隨機出聽力與拼字題。</p></div>
+      <form id="quiz-form" class="quiz-form"><label for="quiz-range">題目範圍</label><input id="quiz-range" type="text" placeholder="例如：1-5" aria-describedby="quiz-error"><button type="submit">開始測驗</button></form>
+      <p id="quiz-error" class="quiz-error" aria-live="polite"></p><div id="quiz-area" class="quiz-area" hidden></div>
+    </section>
+    <section class="word-section" aria-label="單字清單">
+      <div class="list-heading"><p id="result-count"></p><p class="hint">點擊任一張卡片中的單字即可播放。</p></div>
+      <div id="word-list" class="word-list"></div>
+    </section>
+  </main>
+  <script src="data.js?v=20260914-all-stress"></script>
+  <script src="phonetics.js?v=20260914-all-stress"></script>
+  <script src="vowel-alignment.js?v=20260914-all-stress"></script>
+  <script src="app.js?v=20260914-all-stress"></script>
+</body>
+</html>
+

@@ -1,0 +1,92 @@
+// Explicit letter-to-vowel alignment; silent letters have no annotation.
+window.VOWEL_ALIGNMENT = {};
+for (const pattern of `
+h[u|ʌ]g
+pr[o|ə]t[e|ɛ]ct
+f[o|ə]rg[e|ɛ]t
+y[ou|u]
+rh[i|aɪ]n[o|oʊ]
+r[ou|u]t[i|i]ne
+ g[o|oʊ]ldf[i|ɪ]sh
+b[e|ɪ]f[o|ɔ]re
+b[e|ɛ]dt[i|aɪ]me
+h[a|æ]mst[e|ɚ]r
+z[oo|u]k[ee|i]p[e|ɚ]r
+v[e|ɛ]get[a|ə]ble
+v[i|ɪ]s[i|ɪ]t[o|ɚ]r
+d[i|ɪ]ff[e|ə]r[e|ə]nt
+d[ai|eɪ]l[y|i]
+sp[e|ɛ]ci[a|ə]l
+s[o|ʌ]met[i|aɪ]mes
+h[o|oʊ]ld
+f[ee|i]d
+p[e|ɛ]t
+pl[ea|i]se
+y[ou|ɔ]r
+c[a|ɛ]re
+t[a|eɪ]ke
+m[a|eɪ]ke
+sh[ow|aʊ][e|ɚ]r
+g[i|ɪ]ve
+b[a|æ]th
+c[o|ʌ]me
+h[o|oʊ]me
+h[a|æ]ve
+h[o|oʊ]mew[o|ɝ]rk
+g[e|ɛ]t
+dr[e|ɛ]ssed
+d[i|ə]r[e|ɛ]ct[io|ə]n
+[ou|aʊɚ]r
+v[i|ɪ]ll[a|ɪ]ge
+l[i|ɪ]ve
+[o|ɔ]ff[i|ɪ]ce
+m[u|u]s[e|i][u|ə]m
+h[o|ɑ]sp[i|ɪ]t[a|ə]l
+b[a|eɪ]k[e|ɚ]r[y|i]
+r[e|ɛ]st[au|ɚ]r[a|ɑ]nt
+t[oy|ɔɪ]
+st[o|ɔ]re
+dr[u|ʌ]gst[o|ɔ]re
+th[e|i][a|ə]t[e|ɚ]r
+p[o|ə]l[i|i]ce
+sw[i|ɪ]mm[i|ɪ]ng
+p[oo|u]l
+m[a|ɔ]ll
+z[oo|u]
+st[a|eɪ]d[i|i][u|ə]m
+[a|æ]v[e|ə]n[ue|u]
+b[a|eɪ]th[i|ɪ]ng
+s[ui|u]t
+m[e|ɛ]d[i|ɪ]c[i|ə]ne
+[i|ɪ]m[a|ɪ]ge
+s[a|æ]t[e|ə]ll[i|aɪ]te
+pl[a|æ]n[e|ɪ]t
+c[o|ɑ]nt[i|ɪ]n[e|ə]nt
+c[u|ʌ]lt[u|ɚ]re
+[i|ɪ]nt[e|ɚ]rn[e|ɛ]t
+g[y|ɪ]mn[a|eɪ]s[i|i][u|ə]m
+[i|ɪ]nt[e|ə]rest[i|ɪ]ng
+f[a|eɪ]v[o|ɚ]r[i|ɪ]te
+l[o|ɔ]st
+f[a|eɪ]m[ou|ə]s
+d[e|ɪ]l[i|ɪ]ci[ou|ə]s
+str[ai|eɪ]ght
+c[o|ə]nn[e|ɛ]ct
+[e|ɪ]xpl[o|ɔ]re
+[a|ə]cr[o|ɔ]ss
+n[e|ɛ]xt
+b[e|ɪ]tw[ee|i]n
+b[e|ɪ]h[i|aɪ]nd
+c[o|ɔ]rn[e|ɚ]r
+f[i|ɪ]ll
+r[ea|i]d
+`.trim().split('\n')) {
+  let word = '', spans = [], cursor = 0;
+  for (const match of pattern.trim().matchAll(/\[([^|]+)\|([^\]]+)\]/g)) {
+    word += pattern.trim().slice(cursor, match.index);
+    spans.push({ start: word.length, length: match[1].length, sound: match[2] });
+    word += match[1]; cursor = match.index + match[0].length;
+  }
+  word += pattern.trim().slice(cursor);
+  window.VOWEL_ALIGNMENT[word] = spans;
+}
