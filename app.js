@@ -40,6 +40,73 @@ const EXAMPLES = {
   'take off':'Please take off your shoes.', 'teach':'Ms. Lin will teach us a song.', 'television':'We watch television after homework.', 'tell':'Please tell me the answer.', 'test':'We have a spelling test tomorrow.', 'than':'My bag is heavier than yours.', 'theirs':'Those books are theirs.', 'thirsty':'I am thirsty after running.', 'thousand':'A thousand stars filled the sky.', 'tonight':'We will make pizza tonight.', 'town':'Our town has a small library.', 'train station':'The train station is very busy.', 'turn':'It is your turn now.', 'turn off':'Turn off the fan, please.', 'turn on':'Turn on the lamp, please.', 'twice':'I brush my teeth twice a day.', 'usually':'I usually walk to school.', 'vegetable':'Carrots are orange vegetables.', 'village':'My grandparents live in a village.', 'visit':'We will visit Aunt May tomorrow.', 'wait':'Please wait for the bus.', 'weak':'I felt weak after being sick.', 'week':'There are seven days in a week.', 'weekend':'We go hiking on the weekend.', 'wet':'My socks are wet.', 'which':'Which game do you want?', 'whose':'Whose pencil is this?', 'why':'Why are you laughing?', 'wonderful':'We had a wonderful day.', 'world':'We want to see the world.', 'would':'I would like some water.', 'wrong':'That answer is wrong.', 'yard':'The children played in the yard.', 'year':'This year is going quickly.', 'yesterday':'Yesterday was very sunny.', 'yours':'Is this backpack yours?'
 };
 
+Object.assign(EXAMPLES, {
+  "hug": "I hug my mom before school.",
+  "protect": "We protect the trees in our park.",
+  "forget": "Do not forget your school bag.",
+  "rhino": "The rhino has a big horn.",
+  "routine": "I brush my teeth as part of my routine.",
+  "goldfish": "My goldfish swims in a bowl.",
+  "bedtime": "I read a book before bedtime.",
+  "hamster": "My hamster is small and cute.",
+  "zookeeper": "The zookeeper gives food to the animals.",
+  "vegetable(s)": "I eat vegetables with my rice.",
+  "visitor": "We have a visitor at school today.",
+  "different": "We like different books.",
+  "daily": "I take a daily walk with my mom.",
+  "special": "This is a special day for me.",
+  "hold hands": "We hold hands on the way to school.",
+  "feed my pet": "I feed my pet before school.",
+  "play with": "Can you play with me?",
+  "care for": "We care for the animals.",
+  "take care of my pet": "I take care of my pet every day.",
+  "make my bed": "I make my bed before breakfast.",
+  "take a shower": "I take a shower before bedtime.",
+  "give my pet a bath": "I give my pet a bath with my dad.",
+  "come home": "I come home after school.",
+  "have a snack": "I have a snack after school.",
+  "do my homework": "I do my homework after my snack.",
+  "get dressed": "I get dressed before breakfast.",
+  "brush my teeth": "I brush my teeth before bedtime.",
+  "direction": "Which direction is the park?",
+  "museum": "We see old toys at the museum.",
+  "hospital": "My aunt works at the hospital.",
+  "bakery": "We buy bread at the bakery.",
+  "restaurant": "We eat lunch at this restaurant.",
+  "toy store": "The toy store has a red train.",
+  "drugstore": "We buy medicine at the drugstore.",
+  "movie theater": "We see a movie at the movie theater.",
+  "library": "I read books at the library.",
+  "swimming pool": "We swim in the swimming pool.",
+  "mall": "We buy shoes at the mall.",
+  "zoo": "We see a rhino at the zoo.",
+  "stadium": "We watch a game at the stadium.",
+  "avenue": "The bakery is on this avenue.",
+  "bathing suit": "My bathing suit is blue.",
+  "medicine": "This medicine is for my mom.",
+  "image": "I see an image of a goldfish.",
+  "satellite": "A satellite moves around the Earth.",
+  "planet": "Earth is our home planet.",
+  "continent": "Asia is a large continent.",
+  "culture": "Food is part of our culture.",
+  "Internet": "We use the Internet to learn.",
+  "gymnasium": "We play games in the gymnasium.",
+  "favorite": "This is my favorite book.",
+  "lost": "I am lost. Where is the library?",
+  "famous": "This town has a famous museum.",
+  "delicious": "This bread is delicious.",
+  "straight": "Go straight to the library.",
+  "connect": "We connect the two toy trains.",
+  "explore": "We explore the park after school.",
+  "across from": "The bakery is across from the library.",
+  "next to": "The toy store is next to the bakery.",
+  "between": "The zoo is between the park and the mall.",
+  "famous for": "This bakery is famous for its bread.",
+  "behind": "My bag is behind the chair.",
+  "on the corner of": "The toy store is on the corner of this street.",
+  "fill in": "Please fill in your name."
+});
+
 const WORD_STRESS = {"visit":[0,3],"protect":[3,4],"forget":[3,3],"carry":[0,3],"rhino":[0,3],"routine":[3,4],"goldfish":[0,4],"breakfast":[0,5],"bedtime":[0,3],"hamster":[0,3],"zookeeper":[0,3],"vegetable":[0,3],"visitor":[0,3],"different":[0,4],"daily":[0,3],"special":[0,3],"never":[0,3],"sometimes":[0,4],"usually":[0,2],"always":[0,2],"shower":[0,4],"homework":[0,4],"direction":[2,3],"village":[0,3],"office":[0,2],"museum":[2,2],"hospital":[0,3],"bakery":[0,3],"restaurant":[0,4],"supermarket":[0,2],"station":[0,3],"drugstore":[0,4],"movie":[0,2],"theater":[0,3],"library":[0,2],"police":[2,4],"swimming":[0,4],"stadium":[0,3],"avenue":[0,2],"bathing":[0,4],"medicine":[0,3],"image":[0,2],"satellite":[0,3],"planet":[0,4],"continent":[0,3],"culture":[0,3],"internet":[0,2],"gymnasium":[3,2],"interesting":[0,2],"favorite":[0,3],"famous":[0,2],"delicious":[2,2],"connect":[3,4],"explore":[2,5],"across":[1,5],"between":[2,5],"behind":[2,4],"corner":[0,3]};
 
 
@@ -51,6 +118,9 @@ Object.assign(WORD_STRESS, {
 for (const word of 'we will aunt may hug teach ms lin us a song can you this bag i eat school skip read bed walk to wash my hands hold feed pet pick up please your toys play with care for take of make give bath come home have snack do get dressed brush teeth town our has small live in post the is on street bought milk at train toy store near park pool mall zoo look both ways suit book lost straight from next fill'.split(' ')) {
   WORD_STRESS[word] = [0, word.length];
 }
+
+Object.assign(WORD_STRESS, { animals:[0,2], vegetables:[0,3], today:[2,3], every:[0,2], after:[0,2], around:[1,5], asia:[0,1] });
+for (const word of 'mom trees not big horn as part swims bowl and cute gives food rice like books day me way dad which see old works buy bread lunch red swim shoes watch game blue an moves earth large use learn games am where go two trains its chair name'.split(' ')) WORD_STRESS[word] = [0,word.length];
 
 function vowelGroupAt(word, index) {
   return word.slice(index).match(/^(ai|au|aw|ay|ea|ee|ei|ey|ie|io|oa|oe|oi|oo|ou|ow|oy|ue|ui|[aeiouy])/i)?.[0] || '';
@@ -232,3 +302,4 @@ window.addEventListener('beforeunload', stopSpeaking);
 render();
 
 document.querySelector("#unit").addEventListener("change", render);
+

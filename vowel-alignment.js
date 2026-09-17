@@ -80,6 +80,33 @@ b[e|ɪ]h[i|aɪ]nd
 c[o|ɔ]rn[e|ɚ]r
 f[i|ɪ]ll
 r[ea|i]d
+b[i|ɪ]g
+h[o|ɔ]rn
+p[a|ɑ]rt
+b[ow|oʊ]l
+c[u|u]te
+g[i|ɪ]ves
+v[e|ɛ]get[a|ə]bles
+r[i|aɪ]ce
+l[i|aɪ]ke
+w[ay|eɪ]
+[o|oʊ]ld
+w[o|ɝ]rks
+b[uy|aɪ]
+sw[i|ɪ]m
+g[a|eɪ]me
+m[o|u]ves
+[a|ə]r[ou|aʊ]nd
+[ea|ɝ]rth
+[a|eɪ]si[a|ə]
+l[a|ɑ]rge
+[u|u]se
+l[ear|ɝ]n
+g[a|eɪ]mes
+wh[e|ɛ]re
+tw[o|u]
+tr[ai|eɪ]ns
+n[a|eɪ]me
 `.trim().split('\n')) {
   let word = '', spans = [], cursor = 0;
   for (const match of pattern.trim().matchAll(/\[([^|]+)\|([^\]]+)\]/g)) {
