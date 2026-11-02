@@ -11,3 +11,12 @@
 
 .word .stressed-syllable, .example .stressed-syllable { color:#b13521; font-weight:900; text-decoration:underline; text-decoration-thickness:2px; text-underline-offset:4px; }
 
+.word { line-height:1.9; }
+.annotated-token { display:inline-block; white-space:nowrap; }
+.forms-caption { margin:12px 0 0; color:#596579; font-size:.82rem; }
+.verb-forms { margin-top:4px; }
+#patterns-title { cursor:pointer; font-weight:700; font-size:1.2rem; }
+.pattern-card { padding:12px 0; border-bottom:1px solid #e4edf3; }
+.pattern-card h3 { margin:0; color:#596579; font-size:.9rem; }
+.hero a { color:#e5f4ff; text-underline-offset:3px; }
+

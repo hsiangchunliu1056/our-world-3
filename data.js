@@ -646,5 +646,557 @@ window.LEVEL_FOUR_WORDS = [
     "word": "fill in",
     "meaning": "填寫",
     "past": ""
+  },
+  {
+    "id": 82,
+    "unit": 3,
+    "number": 1,
+    "word": "move",
+    "meaning": "動作",
+    "category": "名詞 Noun",
+    "past": "",
+    "forms": [],
+    "example": "That dance move is fun."
+  },
+  {
+    "id": 83,
+    "unit": 3,
+    "number": 2,
+    "word": "skateboard",
+    "meaning": "滑板",
+    "category": "名詞 Noun",
+    "past": "",
+    "forms": [],
+    "example": "I ride my skateboard in the park."
+  },
+  {
+    "id": 84,
+    "unit": 3,
+    "number": 3,
+    "word": "land",
+    "meaning": "陸地",
+    "category": "名詞 Noun",
+    "past": "",
+    "forms": [],
+    "example": "The boat is close to land."
+  },
+  {
+    "id": 85,
+    "unit": 3,
+    "number": 4,
+    "word": "ferry",
+    "meaning": "渡輪",
+    "category": "名詞 Noun",
+    "past": "",
+    "forms": [],
+    "example": "We take the ferry to school."
+  },
+  {
+    "id": 86,
+    "unit": 3,
+    "number": 5,
+    "word": "helicopter",
+    "meaning": "直升機",
+    "category": "名詞 Noun",
+    "past": "",
+    "forms": [],
+    "example": "A helicopter flies above the trees."
+  },
+  {
+    "id": 87,
+    "unit": 3,
+    "number": 6,
+    "word": "subway",
+    "meaning": "地鐵",
+    "category": "名詞 Noun",
+    "past": "",
+    "forms": [],
+    "example": "My dad takes the subway to work."
+  },
+  {
+    "id": 88,
+    "unit": 3,
+    "number": 7,
+    "word": "hot air balloon",
+    "meaning": "熱氣球",
+    "category": "名詞 Noun",
+    "past": "",
+    "forms": [],
+    "example": "We see a hot air balloon in the sky."
+  },
+  {
+    "id": 89,
+    "unit": 3,
+    "number": 8,
+    "word": "scooter",
+    "meaning": "小型摩托車",
+    "category": "名詞 Noun",
+    "past": "",
+    "forms": [],
+    "example": "My mom rides a scooter to work."
+  },
+  {
+    "id": 90,
+    "unit": 3,
+    "number": 9,
+    "word": "sailboat",
+    "meaning": "帆船",
+    "category": "名詞 Noun",
+    "past": "",
+    "forms": [],
+    "example": "The sailboat is on the lake."
+  },
+  {
+    "id": 91,
+    "unit": 3,
+    "number": 10,
+    "word": "top",
+    "meaning": "頂端；山頂",
+    "category": "名詞 Noun",
+    "past": "",
+    "forms": [],
+    "example": "We walk to the top of the hill."
+  },
+  {
+    "id": 92,
+    "unit": 3,
+    "number": 11,
+    "word": "spaghetti",
+    "meaning": "義大利麵",
+    "category": "名詞 Noun",
+    "past": "",
+    "forms": [],
+    "example": "I like spaghetti for lunch."
+  },
+  {
+    "id": 93,
+    "unit": 3,
+    "number": 12,
+    "word": "cereal",
+    "meaning": "玉米脆片",
+    "category": "名詞 Noun",
+    "past": "",
+    "forms": [],
+    "example": "I eat cereal with milk for breakfast."
+  },
+  {
+    "id": 94,
+    "unit": 3,
+    "number": 13,
+    "word": "pair",
+    "meaning": "一雙；一對",
+    "category": "名詞 Noun",
+    "past": "",
+    "forms": [],
+    "example": "I have a new pair of shoes."
+  },
+  {
+    "id": 95,
+    "unit": 3,
+    "number": 14,
+    "word": "gas",
+    "meaning": "瓦斯；氣體；汽油",
+    "category": "名詞 Noun",
+    "past": "",
+    "forms": [],
+    "example": "Our car needs gas."
+  },
+  {
+    "id": 96,
+    "unit": 3,
+    "number": 15,
+    "word": "pilot",
+    "meaning": "飛行員",
+    "category": "名詞 Noun",
+    "past": "",
+    "forms": [],
+    "example": "The pilot flies the plane."
+  },
+  {
+    "id": 97,
+    "unit": 3,
+    "number": 16,
+    "word": "lane",
+    "meaning": "車道；小路；巷弄",
+    "category": "名詞 Noun",
+    "past": "",
+    "forms": [],
+    "example": "We ride our bikes in the bike lane."
+  },
+  {
+    "id": 98,
+    "unit": 3,
+    "number": 17,
+    "word": "fable",
+    "meaning": "寓言故事",
+    "category": "名詞 Noun",
+    "past": "",
+    "forms": [],
+    "example": "This fable is about a clever fox."
+  },
+  {
+    "id": 99,
+    "unit": 3,
+    "number": 18,
+    "word": "basket",
+    "meaning": "籃子",
+    "category": "名詞 Noun",
+    "past": "",
+    "forms": [],
+    "example": "I put apples in the basket."
+  },
+  {
+    "id": 100,
+    "unit": 3,
+    "number": 19,
+    "word": "truck",
+    "meaning": "卡車",
+    "category": "名詞 Noun",
+    "past": "",
+    "forms": [],
+    "example": "The truck is full of food."
+  },
+  {
+    "id": 101,
+    "unit": 3,
+    "number": 20,
+    "word": "second",
+    "meaning": "秒（形容詞：第二的）",
+    "category": "名詞 Noun",
+    "past": "",
+    "forms": [],
+    "example": "Please wait a second."
+  },
+  {
+    "id": 102,
+    "unit": 3,
+    "number": 21,
+    "word": "thousand",
+    "meaning": "千",
+    "category": "名詞 Noun",
+    "past": "",
+    "forms": [],
+    "example": "There are a thousand books in the library."
+  },
+  {
+    "id": 103,
+    "unit": 3,
+    "number": 22,
+    "word": "bus stop",
+    "meaning": "公車站",
+    "category": "名詞 Noun",
+    "past": "",
+    "forms": [],
+    "example": "We wait at the bus stop."
+  },
+  {
+    "id": 104,
+    "unit": 3,
+    "number": 23,
+    "word": "motorcycle",
+    "meaning": "摩托車",
+    "category": "名詞 Noun",
+    "past": "",
+    "forms": [],
+    "example": "My dad rides a motorcycle to work."
+  },
+  {
+    "id": 105,
+    "unit": 3,
+    "number": 24,
+    "word": "paw",
+    "meaning": "爪子",
+    "category": "名詞 Noun",
+    "past": "",
+    "forms": [],
+    "example": "The dog puts its paw on my hand."
+  },
+  {
+    "id": 106,
+    "unit": 3,
+    "number": 25,
+    "word": "favorite",
+    "meaning": "最喜愛的",
+    "category": "形容詞 Adjective",
+    "past": "",
+    "forms": [],
+    "example": "Blue is my favorite color."
+  },
+  {
+    "id": 107,
+    "unit": 3,
+    "number": 26,
+    "word": "careful",
+    "meaning": "小心的；仔細的",
+    "category": "形容詞 Adjective",
+    "past": "",
+    "forms": [],
+    "example": "Be careful when you cross the street."
+  },
+  {
+    "id": 108,
+    "unit": 3,
+    "number": 27,
+    "word": "exciting",
+    "meaning": "令人興奮的",
+    "category": "形容詞 Adjective",
+    "past": "",
+    "forms": [],
+    "example": "This game is exciting."
+  },
+  {
+    "id": 109,
+    "unit": 3,
+    "number": 28,
+    "word": "colorful",
+    "meaning": "鮮豔的",
+    "category": "形容詞 Adjective",
+    "past": "",
+    "forms": [],
+    "example": "My sister has a colorful bag."
+  },
+  {
+    "id": 110,
+    "unit": 3,
+    "number": 29,
+    "word": "modern",
+    "meaning": "現代的",
+    "category": "形容詞 Adjective",
+    "past": "",
+    "forms": [],
+    "example": "Our town has a modern library."
+  },
+  {
+    "id": 111,
+    "unit": 3,
+    "number": 30,
+    "word": "clever",
+    "meaning": "聰明的",
+    "category": "形容詞 Adjective",
+    "past": "",
+    "forms": [],
+    "example": "The clever dog can open the door."
+  },
+  {
+    "id": 112,
+    "unit": 3,
+    "number": 31,
+    "word": "slowly",
+    "meaning": "緩慢地",
+    "category": "副詞 Adverb",
+    "past": "",
+    "forms": [],
+    "example": "Please walk slowly."
+  },
+  {
+    "id": 113,
+    "unit": 3,
+    "number": 32,
+    "word": "along",
+    "meaning": "沿著；向前",
+    "category": "副詞 Adverb",
+    "past": "",
+    "forms": [],
+    "example": "We walk along the river."
+  },
+  {
+    "id": 114,
+    "unit": 3,
+    "number": 33,
+    "word": "move",
+    "meaning": "移動",
+    "category": "動詞 Verb",
+    "past": "moved",
+    "forms": [
+      "move",
+      "moved",
+      "moved"
+    ],
+    "example": "Please move your bag off the chair."
+  },
+  {
+    "id": 115,
+    "unit": 3,
+    "number": 34,
+    "word": "travel",
+    "meaning": "旅行",
+    "category": "動詞 Verb",
+    "past": "traveled",
+    "forms": [
+      "travel",
+      "traveled",
+      "traveled"
+    ],
+    "example": "We travel by train."
+  },
+  {
+    "id": 116,
+    "unit": 3,
+    "number": 35,
+    "word": "park",
+    "meaning": "停車",
+    "category": "動詞 Verb",
+    "past": "parked",
+    "forms": [
+      "park",
+      "parked",
+      "parked"
+    ],
+    "example": "Please park the car here."
+  },
+  {
+    "id": 117,
+    "unit": 3,
+    "number": 36,
+    "word": "light",
+    "meaning": "點燃",
+    "category": "動詞 Verb",
+    "past": "lit",
+    "forms": [
+      "light",
+      "lit",
+      "lit"
+    ],
+    "example": "Dad will light the candle."
+  },
+  {
+    "id": 118,
+    "unit": 3,
+    "number": 37,
+    "word": "heat",
+    "meaning": "加熱",
+    "category": "動詞 Verb",
+    "past": "heated",
+    "forms": [
+      "heat",
+      "heated",
+      "heated"
+    ],
+    "example": "Mom will heat the soup."
+  },
+  {
+    "id": 119,
+    "unit": 3,
+    "number": 38,
+    "word": "blow",
+    "meaning": "吹動",
+    "category": "動詞 Verb",
+    "past": "blew",
+    "forms": [
+      "blow",
+      "blew",
+      "blown"
+    ],
+    "example": "I blow on my hot soup."
+  },
+  {
+    "id": 120,
+    "unit": 3,
+    "number": 39,
+    "word": "go on vacation",
+    "meaning": "去度假",
+    "category": "片語 Phrase",
+    "past": "",
+    "forms": [],
+    "example": "We go on vacation in the summer."
+  },
+  {
+    "id": 121,
+    "unit": 3,
+    "number": 40,
+    "word": "pedal uphill",
+    "meaning": "踩踏板往上坡去",
+    "category": "片語 Phrase",
+    "past": "",
+    "forms": [],
+    "example": "I pedal uphill on my bike."
+  },
+  {
+    "id": 122,
+    "unit": 3,
+    "number": 41,
+    "word": "coast downhill",
+    "meaning": "往下坡滑行",
+    "category": "片語 Phrase",
+    "past": "",
+    "forms": [],
+    "example": "We coast downhill on our bikes."
+  },
+  {
+    "id": 123,
+    "unit": 3,
+    "number": 42,
+    "word": "get on",
+    "meaning": "上車",
+    "category": "片語 Phrase",
+    "past": "",
+    "forms": [],
+    "example": "We get on the bus at this stop."
+  },
+  {
+    "id": 124,
+    "unit": 3,
+    "number": 43,
+    "word": "get off",
+    "meaning": "下車",
+    "category": "片語 Phrase",
+    "past": "",
+    "forms": [],
+    "example": "We get off the bus near the zoo."
+  },
+  {
+    "id": 125,
+    "unit": 3,
+    "number": 44,
+    "word": "transportation",
+    "meaning": "運輸工具；運輸；交通",
+    "category": "認讀字",
+    "past": "",
+    "forms": [],
+    "example": "Buses and trains are types of transportation."
+  },
+  {
+    "id": 126,
+    "unit": 3,
+    "number": 45,
+    "word": "balloonist",
+    "meaning": "乘熱氣球飛行者",
+    "category": "認讀字",
+    "past": "",
+    "forms": [],
+    "example": "The balloonist waves from the basket."
+  },
+  {
+    "id": 127,
+    "unit": 3,
+    "number": 46,
+    "word": "typical",
+    "meaning": "典型的",
+    "category": "認讀字",
+    "past": "",
+    "forms": [],
+    "example": "This is a typical school day."
+  },
+  {
+    "id": 128,
+    "unit": 3,
+    "number": 47,
+    "word": "system",
+    "meaning": "系統",
+    "category": "認讀字",
+    "past": "",
+    "forms": [],
+    "example": "Our town has a good bus system."
+  },
+  {
+    "id": 129,
+    "unit": 3,
+    "number": 48,
+    "word": "international",
+    "meaning": "國際性的",
+    "category": "認讀字",
+    "past": "",
+    "forms": [],
+    "example": "We watch an international soccer game."
   }
 ];

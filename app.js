@@ -122,6 +122,16 @@ for (const word of 'we will aunt may hug teach ms lin us a song can you this bag
 Object.assign(WORD_STRESS, { animals:[0,2], vegetables:[0,3], today:[2,3], every:[0,2], after:[0,2], around:[1,5], asia:[0,1] });
 for (const word of 'mom trees not big horn as part swims bowl and cute gives food rice like books day me way dad which see old works buy bread lunch red swim shoes watch game blue an moves earth large use learn games am where go two trains its chair name'.split(' ')) WORD_STRESS[word] = [0,word.length];
 
+// Unit 3 vocabulary, verb forms, examples and textbook sentence patterns.
+for (const marked of 'SKATEboard FERry HELicopter aBOVE SUBway balLOON SCOOTer SAILboat spaGHETti CEReal PIlot FAble CLEVer BASket SECond THOUsand MOtorcycle CAREful exCITing COLor COLorful SISter MODern Open SLOWly aLONG RIVer TRAVel TRAVeled CANdle HEATed vaCAtion SUMmer PEDal upHILL downHILL transporTAtion BUSes balLOONist TYPical SYStem interNAtional SOCcer BROther DOESnt MOther FAther SEVen THIRty RABbit SINGer HAMburgers JENny TENnis SATurdays APples'.split(' ')) {
+  const word = marked.toLowerCase().replace('doesnt', "doesn't");
+  const start = marked.search(/[A-Z]/); const length = marked.match(/[A-Z]+/)[0].length;
+  WORD_STRESS[word] = [start, length];
+}
+for (const word of "move that dance fun ride land boat close flies takes work hot air sky rides lake top hill pair new gas car needs plane lane bikes bike fox put truck full wait there are bus stop paw dog puts hand be when cross off moved by here parked light lit heat soup blow blew blown coast types waves good too don't his does her she walks but boy girl eats eight he wants vet likes sam".split(' ')) WORD_STRESS[word] = [0, word.length];
+WORD_STRESS["o'clock"] = [2, 5];
+WORD_STRESS.about = [1, 4]; WORD_STRESS.door = [0, 4];
+
 function vowelGroupAt(word, index) {
   return word.slice(index).match(/^(ai|au|aw|ay|ea|ee|ei|ey|ie|io|oa|oe|oi|oo|ou|ow|oy|ue|ui|[aeiouy])/i)?.[0] || '';
 }
@@ -182,7 +192,10 @@ function appendAnnotatedText(parent, text, skipFunctionWords = false, markStress
   tokens.forEach((token) => {
     if (/^[A-Za-z]/.test(token)) {
       if (skipFunctionWords && NO_SENTENCE_IPA.has(token.toLowerCase())) parent.append(token);
-      else appendAnnotatedWord(parent, token, markStress);
+      else {
+        const wordSpan = document.createElement('span'); wordSpan.className = 'annotated-token';
+        appendAnnotatedWord(wordSpan, token, markStress); parent.append(wordSpan);
+      }
     }
     else parent.append(token);
   });
@@ -217,16 +230,50 @@ function render() {
   count.textContent = `共 ${matches.length} 個單字`;
   list.replaceChildren();
   if (!matches.length) { list.innerHTML = '<p class="empty">找不到相符的單字。</p>'; return; }
-  matches.forEach(({ id, word, meaning, unit, number: sourceNumber, past }) => {
+  matches.forEach(({ id, word, meaning, unit, number: sourceNumber, past, forms, example: ownExample }) => {
     const card = document.createElement('article'); card.className = 'word-card';
     const number = document.createElement('span'); number.className = 'number'; number.textContent = `No. ${String(id).padStart(3, '0')} · U${unit} 課本 ${sourceNumber}`;
     const button = document.createElement('button'); button.className = 'word'; button.type = 'button'; appendAnnotatedText(button, word, false, true);
     button.setAttribute('aria-label', `播放 ${word}`); button.addEventListener('click', () => speak(word, button));
-    const translation = document.createElement('p'); translation.className = 'meaning'; translation.textContent = meaning + (past ? `（過去式：${past}）` : "");
-    const example = document.createElement('button'); example.className = 'example'; example.type = 'button'; if (EXAMPLES[word]) appendAnnotatedText(example, EXAMPLES[word], false, true);
-    example.setAttribute('aria-label', `播放例句：${EXAMPLES[word]}`); example.addEventListener('click', () => speak(EXAMPLES[word], example));
-    card.append(number, button, translation); if (EXAMPLES[word]) card.append(example); list.append(card);
+    const translation = document.createElement('p'); translation.className = 'meaning'; translation.textContent = meaning + (past && !forms?.length ? `（過去式：${past}）` : "");
+    card.append(number, button, translation);
+    if (forms?.length) {
+      const caption = document.createElement('p'); caption.className = 'forms-caption'; caption.textContent = '原形 → 過去式 → 過去分詞';
+      const verbForms = document.createElement('button'); verbForms.className = 'example verb-forms'; verbForms.type = 'button';
+      appendAnnotatedText(verbForms, forms.join(' / '), false, true);
+      verbForms.setAttribute('aria-label', `播放動詞三態：${forms.join(', ')}`);
+      verbForms.addEventListener('click', () => speak(forms.join(', '), verbForms));
+      card.append(caption, verbForms);
+    }
+    const exampleText = ownExample || EXAMPLES[word];
+    if (exampleText) {
+      const example = document.createElement('button'); example.className = 'example'; example.type = 'button';
+      appendAnnotatedText(example, exampleText, false, true);
+      example.setAttribute('aria-label', `播放例句：${exampleText}`); example.addEventListener('click', () => speak(exampleText, example));
+      card.append(example);
+    }
+    list.append(card);
   });
+}
+
+function renderPatterns() {
+  const section = document.querySelector('#patterns-section');
+  const unit = document.querySelector('#unit').value;
+  section.hidden = unit !== '' && unit !== '3';
+  const container = document.querySelector('#patterns-list');
+  container.replaceChildren();
+  for (const pattern of window.UNIT3_PATTERNS) {
+    const card = document.createElement('article'); card.className = 'pattern-card';
+    const title = document.createElement('h3'); title.textContent = `${pattern.grammar} · ${pattern.number}`; card.append(title);
+    for (const line of pattern.lines) {
+      const button = document.createElement('button'); button.className = 'example'; button.type = 'button';
+      if (line.speaker) button.append(`${line.speaker}: `);
+      appendAnnotatedText(button, line.text, false, true);
+      button.setAttribute('aria-label', `播放句型：${line.text}`);
+      button.addEventListener('click', () => speak(line.text, button)); card.append(button);
+    }
+    container.append(card);
+  }
 }
 
 function shuffle(items) {
@@ -238,7 +285,8 @@ function vowelSounds(word) {
 }
 
 function makeChoices(answer, pool) {
-  return shuffle([answer, ...shuffle(pool.filter((item) => item.word !== answer.word)).slice(0, 3)]);
+  const unique = [...new Map(pool.filter(item => item.word !== answer.word).map(item => [item.word, item])).values()];
+  return shuffle([answer, ...shuffle(unique).slice(0, 3)]);
 }
 
 function showQuestion(questions, index, score) {
@@ -300,6 +348,6 @@ search.addEventListener('input', render);
 stopButton.addEventListener('click', () => { stopSpeaking(); status.textContent = '已停止發音'; });
 window.addEventListener('beforeunload', stopSpeaking);
 render();
+renderPatterns();
 
-document.querySelector("#unit").addEventListener("change", render);
-
+document.querySelector("#unit").addEventListener("change", () => { render(); renderPatterns(); });
