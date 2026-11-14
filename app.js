@@ -132,6 +132,11 @@ for (const word of "move that dance fun ride land boat close flies takes work ho
 WORD_STRESS["o'clock"] = [2, 5];
 WORD_STRESS.about = [1, 4]; WORD_STRESS.door = [0, 4];
 
+for (const marked of 'poTAto PEPper COOKie COOKies KITten SPIder LISten FLOWers SALTy BLANket BEAUtiful BUTterfly UGly MONster TERrible QUIet MUsic STICKy CANdy BITter LEMon SPIcy HUNdreds fanTAStic aMAZing WHISker BRUSHes chaMEleon MEter kiLOMeter aLIVE LITtle'.split(' ')) {
+  WORD_STRESS[marked.toLowerCase()] = [marked.search(/[A-Z]/), marked.match(/[A-Z]+/)[0].length];
+}
+for (const word of 'chips share ice cream cold bake tongue licks skin feels dry sleeps seal past wall birds tree feel wind face smell these sweet taste sound drums loud touch soft smooth stone rough bark wings kind smile hard rock fur smells now found box tastes sour stars front stops same time clap cake view long sits branch stick one plant still'.split(' ')) WORD_STRESS[word] = [0,word.length];
+
 function vowelGroupAt(word, index) {
   return word.slice(index).match(/^(ai|au|aw|ay|ea|ee|ei|ey|ie|io|oa|oe|oi|oo|ou|ow|oy|ue|ui|[aeiouy])/i)?.[0] || '';
 }
@@ -215,7 +220,7 @@ function speak(word, button) {
   button.classList.add('is-speaking');
   stopButton.disabled = false;
   status.textContent = `正在播放：${word}`;
-  const utterance = new SpeechSynthesisUtterance(word.replaceAll("(s)", "s").replaceAll(/[()]/g, '').replaceAll('…', ''));
+  const utterance = new SpeechSynthesisUtterance(word.replaceAll("(s)", "s").replaceAll(/[()]/g, '').replaceAll('…', '').replaceAll('...', '').trim());
   utterance.lang = 'en-US';
   utterance.rate = 0.72;
   utterance.voice = speechSynthesis.getVoices().find((voice) => /^en-US/i.test(voice.lang)) || null;
@@ -232,7 +237,7 @@ function render() {
   if (!matches.length) { list.innerHTML = '<p class="empty">找不到相符的單字。</p>'; return; }
   matches.forEach(({ id, word, meaning, unit, number: sourceNumber, past, forms, example: ownExample }) => {
     const card = document.createElement('article'); card.className = 'word-card';
-    const number = document.createElement('span'); number.className = 'number'; number.textContent = `No. ${String(id).padStart(3, '0')} · U${unit} 課本 ${sourceNumber}`;
+    const number = document.createElement('span'); number.className = 'number'; number.textContent = `No. ${String(id).padStart(3, '0')} · U${unit} ${unit === 4 && id >= 166 ? '識讀字' : '課本'} ${sourceNumber}`;
     const button = document.createElement('button'); button.className = 'word'; button.type = 'button'; appendAnnotatedText(button, word, false, true);
     button.setAttribute('aria-label', `播放 ${word}`); button.addEventListener('click', () => speak(word, button));
     const translation = document.createElement('p'); translation.className = 'meaning'; translation.textContent = meaning + (past && !forms?.length ? `（過去式：${past}）` : "");
@@ -327,7 +332,7 @@ function showQuestion(questions, index, score) {
     type.textContent = '拼字題'; prompt.textContent = `請拼出「${question.meaning}」的英文單字。`;
     const input = document.createElement('input'); input.type = 'text'; input.className = 'quiz-spelling'; input.autocomplete = 'off'; input.placeholder = '輸入英文單字';
     const button = document.createElement('button'); button.type = 'button'; button.className = 'quiz-next'; button.textContent = '確認答案';
-    button.addEventListener('click', () => next(input.value.trim().toLowerCase() === question.word.toLowerCase())); quizArea.append(input, button);
+    button.addEventListener('click', () => next([question.word, question.word.replace('(s)', ''), question.word.replace('(s)', 's')].some(answer => answer.replace(/\s*\.{3}$/, '').toLowerCase() === input.value.trim().replace(/\s*\.{3}$/, '').toLowerCase()))); quizArea.append(input, button);
   }
   quizArea.prepend(progress, type, prompt); quizArea.append(feedback);
 }

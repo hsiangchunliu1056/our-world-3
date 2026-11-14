@@ -1198,5 +1198,401 @@ window.LEVEL_FOUR_WORDS = [
     "past": "",
     "forms": [],
     "example": "We watch an international soccer game."
+  },
+  {
+    "id": 130,
+    "unit": 4,
+    "number": 1,
+    "category": "Nouns 名詞",
+    "word": "potato chips",
+    "meaning": "洋芋片",
+    "example": "We share a bag of potato chips."
+  },
+  {
+    "id": 131,
+    "unit": 4,
+    "number": 2,
+    "category": "Nouns 名詞",
+    "word": "pepper",
+    "meaning": "胡椒；辣椒",
+    "example": "Dad puts pepper on his soup."
+  },
+  {
+    "id": 132,
+    "unit": 4,
+    "number": 3,
+    "category": "Nouns 名詞",
+    "word": "ice cream",
+    "meaning": "冰淇淋",
+    "example": "My ice cream is cold."
+  },
+  {
+    "id": 133,
+    "unit": 4,
+    "number": 4,
+    "category": "Nouns 名詞",
+    "word": "cookie(s)",
+    "meaning": "餅乾",
+    "example": "We bake cookies after school."
+  },
+  {
+    "id": 134,
+    "unit": 4,
+    "number": 5,
+    "category": "Nouns 名詞",
+    "word": "tongue",
+    "meaning": "舌頭",
+    "example": "The kitten licks its paw with its tongue."
+  },
+  {
+    "id": 135,
+    "unit": 4,
+    "number": 6,
+    "category": "Nouns 名詞",
+    "word": "skin",
+    "meaning": "皮膚",
+    "example": "The skin on my hand feels dry."
+  },
+  {
+    "id": 136,
+    "unit": 4,
+    "number": 7,
+    "category": "Nouns 名詞",
+    "word": "kitten",
+    "meaning": "小貓",
+    "example": "The kitten sleeps on my bed."
+  },
+  {
+    "id": 137,
+    "unit": 4,
+    "number": 8,
+    "category": "Nouns 名詞",
+    "word": "seal",
+    "meaning": "海豹",
+    "example": "The seal swims past the boat."
+  },
+  {
+    "id": 138,
+    "unit": 4,
+    "number": 9,
+    "category": "Nouns 名詞",
+    "word": "spider",
+    "meaning": "蜘蛛",
+    "example": "A spider is on the wall."
+  },
+  {
+    "id": 139,
+    "unit": 4,
+    "number": 10,
+    "category": "Verbs 動詞",
+    "word": "listen",
+    "meaning": "聽",
+    "example": "Listen to the birds in the tree."
+  },
+  {
+    "id": 140,
+    "unit": 4,
+    "number": 11,
+    "category": "Verbs 動詞",
+    "word": "feel",
+    "meaning": "感覺",
+    "example": "I can feel the wind on my face."
+  },
+  {
+    "id": 141,
+    "unit": 4,
+    "number": 12,
+    "category": "Verbs 動詞",
+    "word": "smell",
+    "meaning": "聞起來；聞",
+    "example": "These flowers smell sweet."
+  },
+  {
+    "id": 142,
+    "unit": 4,
+    "number": 13,
+    "category": "Verbs 動詞",
+    "word": "taste",
+    "meaning": "品嚐；嚐起來",
+    "example": "These chips taste salty."
+  },
+  {
+    "id": 143,
+    "unit": 4,
+    "number": 14,
+    "category": "Verbs 動詞",
+    "word": "sound",
+    "meaning": "聽起來",
+    "example": "The drums sound loud."
+  },
+  {
+    "id": 144,
+    "unit": 4,
+    "number": 15,
+    "category": "Verbs 動詞",
+    "word": "touch",
+    "meaning": "觸摸",
+    "example": "Can I touch the soft blanket?"
+  },
+  {
+    "id": 145,
+    "unit": 4,
+    "number": 16,
+    "category": "Adjectives 形容詞",
+    "word": "smooth",
+    "meaning": "光滑的",
+    "example": "This stone feels smooth."
+  },
+  {
+    "id": 146,
+    "unit": 4,
+    "number": 17,
+    "category": "Adjectives 形容詞",
+    "word": "rough",
+    "meaning": "粗糙的",
+    "example": "The bark on this tree feels rough."
+  },
+  {
+    "id": 147,
+    "unit": 4,
+    "number": 18,
+    "category": "Adjectives 形容詞",
+    "word": "beautiful",
+    "meaning": "美麗的",
+    "example": "The butterfly has beautiful wings."
+  },
+  {
+    "id": 148,
+    "unit": 4,
+    "number": 19,
+    "category": "Adjectives 形容詞",
+    "word": "ugly",
+    "meaning": "醜的",
+    "example": "The ugly monster has a kind smile."
+  },
+  {
+    "id": 149,
+    "unit": 4,
+    "number": 20,
+    "category": "Adjectives 形容詞",
+    "word": "hard",
+    "meaning": "硬的",
+    "example": "This rock feels hard."
+  },
+  {
+    "id": 150,
+    "unit": 4,
+    "number": 21,
+    "category": "Adjectives 形容詞",
+    "word": "soft",
+    "meaning": "柔軟的",
+    "example": "My kitten has soft fur."
+  },
+  {
+    "id": 151,
+    "unit": 4,
+    "number": 22,
+    "category": "Adjectives 形容詞",
+    "word": "delicious",
+    "meaning": "美味的",
+    "example": "This soup is delicious."
+  },
+  {
+    "id": 152,
+    "unit": 4,
+    "number": 23,
+    "category": "Adjectives 形容詞",
+    "word": "terrible",
+    "meaning": "糟糕的",
+    "example": "The old milk smells terrible."
+  },
+  {
+    "id": 153,
+    "unit": 4,
+    "number": 24,
+    "category": "Adjectives 形容詞",
+    "word": "quiet",
+    "meaning": "安靜的",
+    "example": "Please be quiet in the library."
+  },
+  {
+    "id": 154,
+    "unit": 4,
+    "number": 25,
+    "category": "Adjectives 形容詞",
+    "word": "loud",
+    "meaning": "大聲的、吵鬧的",
+    "example": "The music is too loud."
+  },
+  {
+    "id": 155,
+    "unit": 4,
+    "number": 26,
+    "category": "Adjectives 形容詞",
+    "word": "sticky",
+    "meaning": "黏的",
+    "example": "My hands are sticky after I eat candy."
+  },
+  {
+    "id": 156,
+    "unit": 4,
+    "number": 27,
+    "category": "Adjectives 形容詞",
+    "word": "dry",
+    "meaning": "乾的",
+    "example": "My shoes are dry now."
+  },
+  {
+    "id": 157,
+    "unit": 4,
+    "number": 28,
+    "category": "Adjectives 形容詞",
+    "word": "old",
+    "meaning": "老的、舊的",
+    "example": "I found an old toy in the box."
+  },
+  {
+    "id": 158,
+    "unit": 4,
+    "number": 29,
+    "category": "Adjectives 形容詞",
+    "word": "salty",
+    "meaning": "鹹的",
+    "example": "These potato chips are salty."
+  },
+  {
+    "id": 159,
+    "unit": 4,
+    "number": 30,
+    "category": "Adjectives 形容詞",
+    "word": "bitter",
+    "meaning": "苦的",
+    "example": "This medicine tastes bitter."
+  },
+  {
+    "id": 160,
+    "unit": 4,
+    "number": 31,
+    "category": "Adjectives 形容詞",
+    "word": "sour",
+    "meaning": "酸的",
+    "example": "The lemon tastes sour."
+  },
+  {
+    "id": 161,
+    "unit": 4,
+    "number": 32,
+    "category": "Adjectives 形容詞",
+    "word": "spicy",
+    "meaning": "辣的",
+    "example": "This pepper is too spicy for me."
+  },
+  {
+    "id": 162,
+    "unit": 4,
+    "number": 33,
+    "category": "Adjectives 形容詞",
+    "word": "sweet",
+    "meaning": "甜的",
+    "example": "The ice cream tastes sweet."
+  },
+  {
+    "id": 163,
+    "unit": 4,
+    "number": 34,
+    "category": "Phrase 片語",
+    "word": "hundreds of ...",
+    "meaning": "數百的",
+    "example": "I see hundreds of stars in the sky."
+  },
+  {
+    "id": 164,
+    "unit": 4,
+    "number": 35,
+    "category": "Phrase 片語",
+    "word": "in front of ...",
+    "meaning": "在…前面",
+    "example": "The bus stops in front of my school."
+  },
+  {
+    "id": 165,
+    "unit": 4,
+    "number": 36,
+    "category": "Phrase 片語",
+    "word": "at the same time",
+    "meaning": "同時",
+    "example": "We clap at the same time."
+  },
+  {
+    "id": 166,
+    "unit": 4,
+    "number": 1,
+    "category": "Words for recognition 識讀字",
+    "word": "fantastic",
+    "meaning": "極好的",
+    "example": "Your cake tastes fantastic!"
+  },
+  {
+    "id": 167,
+    "unit": 4,
+    "number": 2,
+    "category": "Words for recognition 識讀字",
+    "word": "amazing",
+    "meaning": "令人驚奇的",
+    "example": "The view from the top is amazing."
+  },
+  {
+    "id": 168,
+    "unit": 4,
+    "number": 3,
+    "category": "Words for recognition 識讀字",
+    "word": "whisker",
+    "meaning": "鬍鬚、觸鬚",
+    "example": "A long whisker brushes my hand."
+  },
+  {
+    "id": 169,
+    "unit": 4,
+    "number": 4,
+    "category": "Words for recognition 識讀字",
+    "word": "chameleon",
+    "meaning": "變色龍",
+    "example": "The chameleon sits on a branch."
+  },
+  {
+    "id": 170,
+    "unit": 4,
+    "number": 5,
+    "category": "Words for recognition 識讀字",
+    "word": "meter",
+    "meaning": "公尺",
+    "example": "This stick is one meter long."
+  },
+  {
+    "id": 171,
+    "unit": 4,
+    "number": 6,
+    "category": "Words for recognition 識讀字",
+    "word": "kilometer",
+    "meaning": "公里",
+    "example": "We walk one kilometer to school."
+  },
+  {
+    "id": 172,
+    "unit": 4,
+    "number": 7,
+    "category": "Words for recognition 識讀字",
+    "word": "alive",
+    "meaning": "活著的",
+    "example": "The little plant is still alive."
+  },
+  {
+    "id": 173,
+    "unit": 4,
+    "number": 8,
+    "category": "Words for recognition 識讀字",
+    "word": "different",
+    "meaning": "不同的",
+    "example": "These two flowers smell different."
   }
 ];
